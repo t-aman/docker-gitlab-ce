@@ -24,7 +24,6 @@
     - 3.動作確認
         ブラウザから接続
             ・http://192.168.99.100/
-            ・http://192.168.99.100:8080/   ※phpMyAdmin root/root
         
         補足）サーバのIPアドレスはDockerで確認
         $ docker-machine ip
