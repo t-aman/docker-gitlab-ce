@@ -2,11 +2,11 @@
 
 #### Dockerイメージ（GitLab）
 
-    Windows の Docker 環境で GitLab を起動します。
+    Docker 環境で GitLab を起動します。Windows 環境でも動作します。
 
 #### 動作環境
 
-    Windows Docker 環境で実行します。
+    Docker 環境で実行します。Windows 環境でも動作します。
 
 # 利用方法
 
