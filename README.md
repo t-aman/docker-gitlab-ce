@@ -24,6 +24,8 @@
             ・http://192.168.99.100/
         
         補足）初回起動時にrootのパスワード変更を行いログインする
+        補足）ログイン後、「Settings」の「Preferences」の「Language」を「日本語」
+              にすることでメニューが日本語になる
         補足）別コンソールでコンテナに接続
         $ docker exec -it  gitlab /bin/bash
 
