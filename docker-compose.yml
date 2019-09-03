@@ -1,16 +1,15 @@
 version: "3.7"
 services:
   web:
-    image: "gitlab/gitlab-ce:rc"
+    image: 'gitlab/gitlab-ce:rc'
     restart: always
-    hostname: "192.168.99.100"
+    container_name: 'gitlab'
+    hostname: '192.168.99.100'
     environment:
-      GITLAB_OMNIBUS_CONFIG: external_url 'http://192.168.99.100:10080/gitlab/'
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://192.168.99.100'
+        letsencrypt['enable'] = false
     ports:
-      - "10080:80"
-      - "10443:443"
-      - "1022:22"
-    volumes:
-      - "/:/etc/gitlab"
-      - "/:/var/log/gitlab"
-      - "/:/var/opt/gitlab"
+      - '80:80'
+      - '2222:22'
+      
